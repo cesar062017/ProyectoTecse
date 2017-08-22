@@ -18,16 +18,13 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <div>
-            <input name="nombre" placeholder="Nombre">
-            <input name="usuario" placeholder="Usuario">
-            <input name="password" placeholder="Contraseña">
-            <input name="direccion" placeholder="Nivel">
-            <input name="nivel" placeholder="Direccion">
-            <input type="button" value="Guardar" onclick="guardar()">
-        </div>
-        <%!
-            public void guardar() {
+        
+        <%
+            String nombre = request.getParameter("nombre");
+            String usuario = request.getParameter("usuario");
+            String password = request.getParameter("password");
+            String direccion = request.getParameter("direccion");
+            String nivel = request.getParameter("nivel");         
                 String basedatos = "bd_inventario_bitel";
                 MongoClient mCliente = new MongoClient("127.0.0.1");
                 /*Esta es una version antigua si algun dia falla el sistema es x esto*/
@@ -39,18 +36,14 @@
                 //Pattern patron = Pattern.compile("J");
                 //QueryBuilder consulta = QueryBuilder.start("nombre").regex(patron);
                 //DBCursor cursor = coleccion.find(consulta.get());
-                String nombre = request.getParameter("nombre");
-                String usuario = "a";//request.getParameter("usuario");
-                String password = "a";//request.getParameter("password");
-                String direccion = "a";//request.getParameter("direccion");
-                String nivel = "a";//request.getParameter("nivel");
                 BasicDBObject documento = new BasicDBObject();
                 documento.put("nombre", nombre);
                 documento.put("usuario", usuario);
                 documento.put("password", password);
                 documento.put("direccion", direccion);
                 documento.put("nivel", nivel);
-            }
+                coleccion.insert(documento);
         %>
+        <h1>Usuario ha sido correctamente añadido pero tal ves no, quien sabe no soy un computador</h1>
     </body>
 </html>
