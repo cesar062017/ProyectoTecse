@@ -24,7 +24,7 @@ and open the template in the editor.
         </style>
     </head>
     <body>
-        <form name="frmIndex" method = "post" action="menu.html">
+        <form name="frmIndex" method = "post" action="check.jsp">
             <div id="rectangulo" class="center">
                 <div>
                     <h2>
@@ -32,16 +32,16 @@ and open the template in the editor.
                     </h2>
                 </div>
                 <div>
-                    <label>Ingrese su Usuario</label>
+                    <label>Usuario</label>
                 </div>
                 <div>
-                    <input id="nombre" name="nombre" class="center" placeholder="ingrese usuario">
+                    <input id="nombre" name="nombre" class="center" placeholder="Ingrese usuario" required>
                 </div>
                 <div>
-                    <label>Ingrese su Contraseña</label>
+                    <label>Contraseña</label>
                 </div>
                 <div>
-                    <input id="contra" name="nombre" class="center" placeholder="ingrese contraseña">
+                    <input id="contra" name="password" class="center" placeholder="Ingrese contraseña" required>
                 </div>
                 <div>
                     <input type="submit" value="Ingresar">

@@ -12,15 +12,24 @@
         <title>JSP Pag     e</title>
     </head>
     <body>
-        <form name="frmUsuario" method = "post" action="crearUsuario.jsp">
+
             <div>
                 <input name="nombre" placeholder="Nombre">
+            <div>
+            </div>
                 <input name="usuario" placeholder="Usuario">
+            <div>
+            </div>
                 <input name="password" placeholder="Contraseña">
+            <div>
+            </div>
                 <input name="direccion" placeholder="Nivel">
+            <div>
+            </div>
                 <input name="nivel" placeholder="Direccion">
+            <div>
+            </div>
                 <input type="submit" value="Guardar">
             </div>
-        </form>
     </body>
 </html>

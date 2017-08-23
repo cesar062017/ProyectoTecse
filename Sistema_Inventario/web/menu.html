@@ -7,6 +7,8 @@ and open the template in the editor.
 <html>
     
     <head>
+        <script language="JavaScript" src="motor.js"></script>
+        <link rel="StyleSheet" type="Text/css" href="estilos.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -29,10 +31,10 @@ body {font-family: "Lato", sans-serif}
     <div class="w3-dropdown-hover w3-hide-small">
       <button class="w3-padding-large w3-button" title="More">MANTENIMIENTOS <i class="fa fa-caret-down"></i></button>     
       <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">Saldos</a>
+        <a href="javascript:Carga('frmUsuario.jsp','contenido');" class="w3-bar-item w3-button">Saldos</a>
         <a href="#" class="w3-bar-item w3-button">Series de Liquidacion</a>
         <a href="#" class="w3-bar-item w3-button">Tipos de Documentos</a>
- 		<a href="#" class="w3-bar-item w3-button">Planes Tarifarios</a>
+ 	<a href="#" class="w3-bar-item w3-button">Planes Tarifarios</a>
         <a href="#" class="w3-bar-item w3-button">Modelos de Chips</a>
         <a href="#" class="w3-bar-item w3-button">Agentes</a>
         <a href="#" class="w3-bar-item w3-button">Marcas</a>
@@ -90,17 +92,19 @@ body {font-family: "Lato", sans-serif}
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
   <!-- Automatic Slideshow Images -->
+  
+  <div id="contenido"><img src="principal.jpg" alt="Imagen no cargo correctamente" style="width:732px;height:675px;">Este es el contenido</div>
+  <p>
+    <a href="javascript:Carga('frmUser.html','contenido');">Cargar Datos</a>
+  </p>
   <div class="mySlides w3-display-container w3-center">
     <img src="http://www.perusmart.com/wp-content/uploads/LOGO_BITEL.png" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Los Angeles</h3>
-      <p><b>We had the best time playing at Venice Beach!</b></p>   
+    
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">  
     </div>
   </div>
 
 
-  
- 
 
 <!-- End Page Content -->
 </div>
