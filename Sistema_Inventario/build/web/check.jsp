@@ -15,7 +15,7 @@
         <%
             String usuario = request.getParameter("nombre");
             String password = request.getParameter("password");
-            if(usuario.equals("user01") && password.equals("12345")){
+            if(usuario.equals("user01") && password.equals("abc")){
                 HttpSession sesionOk = request.getSession();
                 sesionOk.setAttribute("usuario",usuario);
                 sesionOk.setAttribute("setLogin","true");
