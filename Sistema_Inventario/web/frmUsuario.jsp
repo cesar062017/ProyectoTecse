@@ -18,15 +18,18 @@
                 <h1>Este es el index</h1>
                 <table border="1" id="tabla">
                     <tr>
-                        <th>Soy titulo</th>
-                        <th>Soy titulo</th>
+                        <th>Soy titulo1</th>
+                        <th>Soy titulo2</th>
+                        <th>Soy titulo3</th>
+                        <th>Soy titulo4</th>
+                        <th>Soy titulo5</th>
                     </tr>
                     <%for(int i=0;i<10;i++){%>
                     <tr>
-                        <td>Soy elemento<%=i%></td>
-                        <td>Soy elemento<%=i%></td>
-                        <td>Soy elemento<%=i%></td>
-                        <td><input id="identificador_<%=i%>" type="button" value="Modificar" onclick="javascript:CargaModificar('frmUsuarioModificar.html','hoja2',this.id)"></td>
+                        <td>Soy elemento1<%=i%></td>
+                        <td>Soy elemento2<%=i%></td>
+                        <td>Soy elemento3<%=i%></td>
+                        <td><input id="identificador_<%=i%>" type="button" value="Modificar" onclick="javascript:CargaModificar('frmUsuarioModificar.html','hoja2',<%=i%>)"></td>
                         <td><input type="button" value="Eliminar"></td>
                     </tr>
                     <%}%>

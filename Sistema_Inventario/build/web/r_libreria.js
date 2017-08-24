@@ -3,25 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+    var e1;
+    var e2;
+    var e3;
+    function cargaModificables(){
+        
+        document.getElementById("e1").value = e1;
+        document.getElementById("e2").value = e2;
+        document.getElementById("e3").value = e3;
+    }
 function cargarDatos(elemento){
     var tabla = document.getElementById("tabla");
     var filas = tabla.getElementsByTagName("tr");
-    var ob;
-    
-    var el = document.getElementById(elemento);
-    
-    for(var i =0;i<filas.length;i++){
-        fila = filas[i];
-        alert(fila.rows[3].innerHTML);
-        if(fila.rows[3].innerHTML == el.value){
-            ob=fila;
-        }
-    }
-    document.getElementById("e1").value = ob.rows[0].innerHTML;
-    document.getElementById("e2").value = ob.rows[1].innerHTML;
-    document.getElementById("e3").value = ob.rows[2].innerHTML;
-    
+    var ob = 0;
+    var el = elemento+1
+    document.getElementById("e1").value = tabla.rows[el].cells[0].innerHTML;
+    document.getElementById("e2").value = tabla.rows[el].cells[1].innerHTML;
+    document.getElementById("e3").value = tabla.rows[el].cells[2].innerHTML;
 }
 function CargaModificar(url, id,elemento)
      {
@@ -51,16 +49,20 @@ function CargaModificar(url, id,elemento)
          //Cuando XMLHttpRequest cambie de estado, ejecutamos esta funcion
          objeto.onreadystatechange = function()
          {
-             cargarObjeto(objeto, id);
+             cargarObjeto(objeto, id,elemento);
+             if (objeto.readyState === 4)
+                cargarDatos(elemento);
+             
          };
          objeto.open('GET', url, true); // indicamos con el método open la url a cargar de manera asíncrona
          objeto.send(null); // Enviamos los datos con el metodo send
-         cargarDatos(elemento);
+         
      }
-     function cargarObjeto(objeto, id)
+     function cargarObjeto(objeto, id,elemento)
      {
-         if (objeto.readyState === 4) //si se ha cargado completamente
+         if (objeto.readyState === 4){ //si se ha cargado completamente
              document.getElementById(id).innerHTML = objeto.responseText;
+             }
          else //en caso contrario, mostramos un gif simulando una precarga
              document.getElementById(id).innerHTML = "CARGANDO...";
      }
