@@ -1,0 +1,43 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23-ago-2017, 19:38:59
+    Author     : Ricardo Cutimbo
+*/
+#fondo{
+    float:left;
+    left: 63px;
+    top: 84px;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-right: 2%;
+    width: 95%;
+    height: 100%;
+    z-index: 1;
+    background-color: #FF0000;
+}
+#hoja1{
+    float:left;
+    left: 63px;
+    top: 84px;
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 40%;
+    height: 675px;
+    z-index: 2;
+    background-color: #3399FF;
+}
+#hoja2{
+    float: right;
+    left: 63px;
+    top: 84px;
+    margin-right: 5%;
+    margin-top: 5%;
+    width: 40%;
+    height: 675px;
+    z-index: 2;
+    background-color: #33FF00;
+}

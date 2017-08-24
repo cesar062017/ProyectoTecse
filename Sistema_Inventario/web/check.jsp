@@ -26,7 +26,7 @@
             }
             else{
         %>
-        <jsp:forward page="index.html"/>
+        <jsp:forward page="menu.html"/>
         <%
             }
         %>
