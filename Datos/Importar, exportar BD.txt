@@ -1,0 +1,11 @@
+Abrir una venta de comandos dentro de la carpera bin del mongodb
+Importar:
+mongodump -h localhost -d {nombre de la bd} -o {Direccion absoluta de la carpeta que contendra la backup}  
+Exportar: 
+mongorestore {Direccion absoluta de la carpeta que contiene la backup}
+
+ejemplo: la bd es BDPrueba , y la carpeta D:\backups\
+Importar:
+mongodump -h localhost -d BDPrueba -o D:\backups\
+exportar:
+mongorestore D:\backups\ 
