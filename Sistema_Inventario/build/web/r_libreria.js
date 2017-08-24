@@ -5,7 +5,7 @@
  */
 function cargarDatos(elemento){
     var tabla = document.getElementById("tabla");
-    var posicion = elemento+1
+    var posicion = elemento+1;
     document.getElementById("e1").value = tabla.rows[posicion].cells[0].innerHTML;
     document.getElementById("e2").value = tabla.rows[posicion].cells[1].innerHTML;
     document.getElementById("e3").value = tabla.rows[posicion].cells[2].innerHTML;
