@@ -17,26 +17,26 @@ and open the template in the editor.
     width: 95%;
     height: 100%;
     z-index: 1;
-    background-color: #F1C40F;
+    background-color: #FFFF00;
 }
 #hoja1{
     float:left;
     left: 63px;
     top: 84px;
-    margin-left: 5%;
-    margin-top: 5%;
-    width: 40%;
+    margin-left: 3%;
+    margin-top: 3%;
+    width: 46%;
     height: 675px;
     z-index: 2;
-    background-color: #85C1E9;
+    background-color: #2471A3;
 }
 #hoja2{
     float: right;
     left: 63px;
     top: 84px;
-    margin-right: 5%;
-    margin-top: 5%;
-    width: 40%;
+    margin-right: 3%;
+    margin-top: 3%;
+    width: 46%;
     height: 675px;
     z-index: 2;
     background-color: #3498DB;

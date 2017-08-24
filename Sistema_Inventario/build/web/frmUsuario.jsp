@@ -29,8 +29,9 @@
                         <td>Soy elemento1<%=i%></td>
                         <td>Soy elemento2<%=i%></td>
                         <td>Soy elemento3<%=i%></td>
+                        <td>Soy elemento4<%=i%></td>
+                        <td>Soy elemento5<%=i%></td>
                         <td><input id="identificador_<%=i%>" type="button" value="Modificar" onclick="javascript:CargaModificar('frmUsuarioModificar.html','hoja2',<%=i%>)"></td>
-                        <td><input type="button" value="Eliminar"></td>
                     </tr>
                     <%}%>
                 </table>

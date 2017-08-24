@@ -3,15 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-    var e1;
-    var e2;
-    var e3;
 function cargarDatos(elemento){
     var tabla = document.getElementById("tabla");
     var posicion = elemento+1
     document.getElementById("e1").value = tabla.rows[posicion].cells[0].innerHTML;
     document.getElementById("e2").value = tabla.rows[posicion].cells[1].innerHTML;
     document.getElementById("e3").value = tabla.rows[posicion].cells[2].innerHTML;
+    document.getElementById("e4").value = tabla.rows[posicion].cells[3].innerHTML;
+    document.getElementById("e5").value = tabla.rows[posicion].cells[4].innerHTML;
 }
 function CargaModificar(url, id,elemento)
      {
