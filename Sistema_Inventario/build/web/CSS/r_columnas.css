@@ -17,7 +17,7 @@ and open the template in the editor.
     width: 95%;
     height: 100%;
     z-index: 1;
-    background-color: #FF0000;
+    background-color: #F1C40F;
 }
 #hoja1{
     float:left;
@@ -28,7 +28,7 @@ and open the template in the editor.
     width: 40%;
     height: 675px;
     z-index: 2;
-    background-color: #3399FF;
+    background-color: #85C1E9;
 }
 #hoja2{
     float: right;
@@ -39,5 +39,5 @@ and open the template in the editor.
     width: 40%;
     height: 675px;
     z-index: 2;
-    background-color: #33FF00;
+    background-color: #3498DB;
 }

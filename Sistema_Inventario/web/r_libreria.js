@@ -6,20 +6,12 @@
     var e1;
     var e2;
     var e3;
-    function cargaModificables(){
-        
-        document.getElementById("e1").value = e1;
-        document.getElementById("e2").value = e2;
-        document.getElementById("e3").value = e3;
-    }
 function cargarDatos(elemento){
     var tabla = document.getElementById("tabla");
-    var filas = tabla.getElementsByTagName("tr");
-    var ob = 0;
-    var el = elemento+1
-    document.getElementById("e1").value = tabla.rows[el].cells[0].innerHTML;
-    document.getElementById("e2").value = tabla.rows[el].cells[1].innerHTML;
-    document.getElementById("e3").value = tabla.rows[el].cells[2].innerHTML;
+    var posicion = elemento+1
+    document.getElementById("e1").value = tabla.rows[posicion].cells[0].innerHTML;
+    document.getElementById("e2").value = tabla.rows[posicion].cells[1].innerHTML;
+    document.getElementById("e3").value = tabla.rows[posicion].cells[2].innerHTML;
 }
 function CargaModificar(url, id,elemento)
      {
@@ -50,6 +42,7 @@ function CargaModificar(url, id,elemento)
          objeto.onreadystatechange = function()
          {
              cargarObjeto(objeto, id,elemento);
+             //aqui verificamos para cargar los elementos en el formulario de modificar en los mantenimientos
              if (objeto.readyState === 4)
                 cargarDatos(elemento);
              

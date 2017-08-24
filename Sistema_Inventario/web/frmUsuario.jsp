@@ -15,14 +15,14 @@
     <body>
         <div id="fondo">
             <div id="hoja1">
-                <h1>Este es el index</h1>
+                <h1>Mantenimiento Usuarios</h1>
                 <table border="1" id="tabla">
                     <tr>
-                        <th>Soy titulo1</th>
-                        <th>Soy titulo2</th>
-                        <th>Soy titulo3</th>
-                        <th>Soy titulo4</th>
-                        <th>Soy titulo5</th>
+                        <th>Nombre</th>
+                        <th>Usuario</th>
+                        <th>Password</th>
+                        <th>Nivel</th>
+                        <th>Direccion</th>
                     </tr>
                     <%for(int i=0;i<10;i++){%>
                     <tr>
